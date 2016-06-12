@@ -27,16 +27,22 @@ If you do not already have Python bottle installed this can be installed using
 sudo apt-get install python3-bottle
 ```
 
+If you do not already have GPIO Zero installed this can be installed using
+
+```bash
+sudo apt-get install python3-gpiozero
+```
+
 ## Install Pi-power software
 
 This program is available from GitHub. The latest version can be installed using:
 
 ```bash
 cd /home/pi
-git clone https://github.com/penguintutor/pi-power.git
+git clone https://github.com/nmstoker/pi-power.git
 ```
 
-This will install the program into directory `/home/pi/pi-power`. If using a different directory then you will need to edit the DOCUMENT_ROOT setting within web-power.py
+This will install the program into directory `/home/pi/pi-power`. If using a different directory then you will need to edit the **DOCUMENT_ROOT** setting within web-power.py and the path for the setting **ExecStart** within web-power.service (if using the service).
 
 
 The `web-power.py` script can then be run as root.
